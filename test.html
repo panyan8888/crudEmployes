@@ -1,0 +1,74 @@
+<!-- <!DOCTYPE html> -->
+<html>
+    <head>
+    <title>Crud Employee</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.13.5/xlsx.full.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.13.5/jszip.js"></script>
+    <script src="jquery.sortElements.js"></script>
+    <script type="text/javascript" src="custom.js"></script>
+    </head>
+    <body>
+        <div class="excel-upload">
+            <input type="file" id="fileUpload" />
+            <input type="button" id="upload" value="Upload" />
+        </div>
+        <div class="table-with-button">
+            <div id="dvExcel"></div>
+            <button id="myBtn">Add new employer</button>
+        </div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+        <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="fields">
+                    <div class="photo">
+                        <input type='file' id='imageLoader' name='imageLoader' accept="image/*" data-type='image' />
+                        <span id="photoRule" class="photo-rule">Upload jpg or png</span>
+                        <span id="photoError" class="error">You should upload jpg or png</span>
+                    </div>
+                    <div class="name">
+                        <label for="name">Name</label>
+                        <input id="name" type="text">
+                        <span id="nameRule" class="name-rule">Enter your name</span>
+                        <span id="nameError" class="error">Name should be at least 4 charachters</span>
+                    </div>
+                    <div class="gender">
+                        <div class="gender-options">
+                            <input type="radio" id="male" name="gender" value="male">
+                            <label for="male">Male</label>
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Female</label>
+                        </div>
+                        <span id="genderRule" class="gender-rule">Choose your gender</span>
+                        <span id="genderError" class="error">You should choose your gender</span>
+                    </div>
+                    <div class="phone">
+                        <label for="phone">Phone</label>
+                        <input id="phone" type="text">
+                        <span id="phoneRule" class="phone-rule">ex. +37491511116</span>
+                        <span id="phoneError" class="error">Enter valid phone number</span>
+                    </div>
+                    <div class="email">
+                        <label for="email">Email</label>
+                        <input id="email" type="text">
+                        <span id="emailRule" class="email-rule">Enter Your Email</span>
+                        <span id="emailError" class="error">Enter valid email</span>
+                    </div>
+                    <div class="country">
+                        <label for="country">Country</label>
+                        <input id="country" type="text">
+                        <span id="countryRule" class="country-rule">Enter Your Country</span>
+                        <span id="countryError" class="error">Shouldn't be empty</span>
+                    </div>
+                </div>
+                <div class="save-button">
+                    <button id="saveButton" type="button">Add</button>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

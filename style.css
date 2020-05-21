@@ -1,0 +1,153 @@
+#myBtn{
+    display: none;
+}
+body {
+    background-color: #00FFFF;
+}
+.excel-upload {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #808080;
+    padding-bottom: 5px;
+}
+.excel-upload #fileUpload {
+    outline: none;     
+}
+.excel-upload #fileUpload:hover {
+    cursor: pointer;
+}
+.excel-upload #upload {
+    outline: none;
+}   
+.excel-upload #upload:hover {
+    cursor: pointer;
+}
+.table-with-button{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.table-with-button #myBtn {
+    outline: none;
+}
+.table-with-button #myBtn:hover {
+    cursor: pointer;
+}
+#dvExcel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#dvExcel table {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+tr th {
+    padding: 5px;
+    position: relative;
+}
+tr td {
+    padding: 5px;
+}
+#dvExcel .pager {
+    
+}
+#dvExcel .pager span{
+    margin-right: 5px;
+}
+#dvExcel .pager span:hover{
+    cursor: pointer;
+}
+#dvExcel .pager span.active{
+    color: #ffffff;
+}
+#dvExcel .pager span.active:hover{
+    cursor: auto;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+}
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+/* The Close Button */
+.close {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal-content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.fields {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.fields div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px
+}
+.fields div .gender-options{
+    display: flex;
+    flex-direction: row;
+}
+#male{
+    margin-right: 10px;
+    margin-left: 0;
+}
+.save-button {
+    display: flex;
+    align-items: flex-end;
+    outline: none;
+}
+.save-button button:hover {
+    cursor: pointer;
+}
+.error {
+    color: #FF0000;
+    display: none;
+}
+.sort:after {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    position: absolute;
+    border-top: 5px solid #000000;
+    content: '';
+    display: block;
+    height: 8px;
+    margin-top: -6px;
+    transform: rotate(0deg);
+    top: 19px;
+    right: 0;
+}
